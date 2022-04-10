@@ -11,7 +11,7 @@ from tkinter import filedialog
 # VARIABLES
 image_file_path = "None"
 watermark_file_path = "None"
-save_path = "None"
+save_path = ""
 
 processor = None
 
