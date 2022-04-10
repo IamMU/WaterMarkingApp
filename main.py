@@ -3,6 +3,7 @@ import pip
 from image_processor import ImageProcessor
 
 pip.main(["install", "pillow"])
+pip.main(["install", "tk"])
 
 # IMPORTING LIBRARIES
 import tkinter  # IF TKINTER IS NOT INSTALLED, YOU CAN INSTALL IT BY RUNNING "sudo apt install python3-tk"
@@ -11,7 +12,7 @@ from tkinter import filedialog
 # VARIABLES
 image_file_path = "None"
 watermark_file_path = "None"
-save_path = "None"
+save_path = ""
 
 processor = None
 
@@ -108,6 +109,7 @@ window = tkinter.Tk()
 
 window.title("Image Water Marker")
 window.minsize(width=400, height=400)
+window.resizable(width=False, height=False)
 window.config(padx=WINDOW_PADX, pady=WINDOW_PADY, bg=WINDOW_BACKGROUND_COLOR)
 
 # ADDING TITLE
